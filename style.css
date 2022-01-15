@@ -1,0 +1,18 @@
+body{background: #2c0757; padding: 0 40px; margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; font-family: Arial, Helvetica, sans-serif; color: #fff;}
+.logo img{width: 350px;}
+h1{margin-bottom: 40px; font-size: 1.2em; text-align: center;}
+.box-pikachu{width: 340px; height: 260px; background-image: url("pikachu.png"); }
+.box-pikachu:hover{animation: pikachu 0.3s steps(3) infinite; transition: all 1s; cursor: pointer;}
+
+@media (max-width: 800px){
+    h1{font-size: 1em;}
+    .logo{padding: 40px;}
+}
+@keyframes pikachu{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -1180px 0;
+    }
+}
